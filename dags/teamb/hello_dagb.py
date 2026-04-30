@@ -7,7 +7,7 @@ from airflow.sdk import dag, task
     catchup=False,
     tags=["example"],
 )
-def hello_dag():
+def hello_dagb():
 
     @task
     def hello():
@@ -20,4 +20,4 @@ def hello_dag():
 
     bye(hello())
 
-hello_dag()
+hello_dagb()
