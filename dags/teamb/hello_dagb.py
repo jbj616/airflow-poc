@@ -11,12 +11,12 @@ def hello_dag():
 
     @task
     def hello():
-        print("teamA Hello, world!")
+        print("teamB Hello, world!")
         return "done"
 
     @task
     def bye(msg: str):
-        print(f"fwfwf{msg}, AAA byebye")
+        print(f"fwfwf{msg}, bBB byebye")
 
     bye(hello())
 
